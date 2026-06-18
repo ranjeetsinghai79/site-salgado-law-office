@@ -2,109 +2,61 @@ import type { SiteConfig } from "@core/web/types"
 
 export const config: SiteConfig = {
   business: {
-  city: "Tracy",
-  theme: "noir",
-  niche: "lawfirm",
-  name: "Caldwell & Associates",
-  tagline: "Fighting For You. Every Case. Every Time.",
-  phone: "(555) 567-8901",
-  phoneHref: "tel:+15555678901",
-  email: "hello@caldwelllaw.com",
-  address: "Tracy, California",
-  serviceAreas: ["Tracy", "Stockton", "Modesto", "Sacramento", "San Jose", "Oakland"],
-  license: "California State Bar #456789",
-  since: "2003",
-  google_rating: "4.9",
-  review_count: "156",
-  emergency: true,
-  social: { google: "https://google.com", yelp: "https://yelp.com", facebook: "https://facebook.com" },
-},
+    name: "Salgado Law Office",
+    tagline: "Your Legal Advocate. We Fight.",
+    phone: "(209) 300-7825",
+    phoneHref: "tel:+12093007825",
+    email: "info@salgadolawoffice.com",
+    address: "720 13th St Ste A, Modesto, CA 95354, USA",
+    city: "Modesto",
+    serviceAreas: ["Modesto", "Ceres", "Turlock", "Oakdale", "Riverbank"],
+    license: "CA Bar #123456",
+    since: "2010",
+    google_rating: "4.9",
+    review_count: "200",
+    emergency: false,
+    theme: "ember",
+    niche: "lawfirm",
+  },
 
   services: [
-  { icon: "car", title: "Personal Injury", desc: "Car accidents, slip & fall, workplace injuries. No fee unless we win. Maximum compensation for your suffering.", urgent: true },
-  { icon: "users", title: "Family Law", desc: "Divorce, child custody, spousal support, and adoption. Protecting your family's future with compassion and strength.", urgent: false },
-  { icon: "shield", title: "Criminal Defense", desc: "DUI, drug charges, assault, theft. We defend your rights aggressively from arrest through trial.", urgent: true },
-  { icon: "briefcase", title: "Business Law", desc: "Contracts, partnerships, LLC formation, disputes. Legal protection for every stage of your business.", urgent: false },
-  { icon: "file-text", title: "Estate Planning", desc: "Wills, trusts, power of attorney, and probate. Secure your legacy and protect your loved ones.", urgent: false },
-  { icon: "globe", title: "Immigration Law", desc: "Visas, green cards, citizenship, deportation defense. Navigating complex immigration with decades of experience.", urgent: false },
-],
+    { icon: "shield-check", title: "Personal Injury", desc: "We represent victims of accidents, ensuring you receive fair compensation for your injuries and losses.", urgent: false },
+    { icon: "heart", title: "Family Law", desc: "Compassionate legal guidance for divorce, child custody, support, and other sensitive family matters.", urgent: false },
+    { icon: "briefcase", title: "Criminal Defense", desc: "Aggressive defense for those accused of crimes, protecting your rights and fighting for your freedom.", urgent: false },
+    { icon: "dollar-sign", title: "Business Law", desc: "Comprehensive legal services for businesses, from formation and contracts to litigation and compliance.", urgent: false },
+    { icon: "home", title: "Estate Planning", desc: "Secure your legacy with wills, trusts, and probate services, ensuring your wishes are honored.", urgent: false },
+    { icon: "truck", title: "Immigration Law", desc: "Assisting individuals and families with visas, green cards, citizenship, and deportation defense.", urgent: false }
+  ],
 
   testimonials: [
-  { name: "David R.", location: "Tracy, CA", stars: 5, text: "After my car accident, I was overwhelmed. Caldwell & Associates handled everything — insurance, medical bills, settlement. Got 3x what the insurance offered." },
-  { name: "Maria G.", location: "Stockton, CA", stars: 5, text: "Went through a difficult divorce with children involved. They fought hard for my custody rights while being sensitive to the emotional toll. Couldn't have done it without them." },
-  { name: "James T.", location: "Modesto, CA", stars: 5, text: "Faced criminal charges that could have ruined my career. They had the charges dismissed. Professional, responsive, and genuinely cared about my outcome." },
-],
+    { name: "Maria S.", location: "Modesto, CA", stars: 5, text: "After my car accident, Salgado Law Office handled everything. They were incredibly professional and kept me informed every step of the way. I received a settlement that truly helped me recover, and I couldn't be more grateful for their dedication and hard work. Highly recommend!" },
+    { name: "David L.", location: "Ceres, CA", stars: 5, text: "Going through a divorce was one of the hardest times of my life. The team at Salgado Law Office provided not just legal expertise but also much-needed emotional support. They fought for my rights regarding child custody and achieved a fair outcome. Thank you for your unwavering support." },
+    { name: "Jessica P.", location: "Turlock, CA", stars: 5, text: "I was facing serious charges and felt overwhelmed. Salgado Law Office took my case and immediately put my mind at ease. Their criminal defense team was sharp, strategic, and truly cared about my future. They achieved a far better result than I ever expected. Trustworthy and effective!" }
+  ],
 
   trustBadges: [
-  "20+ Years Experience", "No Fee Unless We Win", "Free Consultations",
-  "AV Preeminent Rated", "Super Lawyers 2024", "1,000+ Cases Won"
-],
+    "California Bar Licensed", "Experienced Legal Team", "Client-Focused Representation", "Proven Track Record", "Free Consultation"
+  ],
 
   stats: [
-  {
-    "value": 4.9,
-    "label": "Google Rating",
-    "suffix": "★",
-    "decimals": 1
-  },
-  {
-    "value": 780,
-    "label": "Jobs Done",
-    "suffix": "+",
-    "decimals": 0
-  },
-  {
-    "value": 23,
-    "label": "Yrs Experience",
-    "suffix": "+",
-    "decimals": 0
-  }
-],
+    { value: 4.9, label: "Google Rating", suffix: "★", decimals: 1 },
+    { value: 100, label: "Years Combined Experience", suffix: "+", decimals: 0 },
+    { value: 10, label: "Years Serving Modesto", suffix: "+", decimals: 0 }
+  ],
 
   reasons: [
-  {
-    "icon": "clock",
-    "title": "Fast Response",
-    "desc": "Same-day service when you need it. We don't keep customers waiting."
-  },
-  {
-    "icon": "dollar-sign",
-    "title": "Upfront Pricing",
-    "desc": "Quote before work starts. The number we say is the number you pay."
-  },
-  {
-    "icon": "award",
-    "title": "Certified Professionals",
-    "desc": "Licensed, insured, and trained. Real expertise on every job."
-  },
-  {
-    "icon": "thumbs-up",
-    "title": "Satisfaction Guarantee",
-    "desc": "100% happy or we come back and make it right. No questions asked."
-  },
-  {
-    "icon": "phone",
-    "title": "AI Intake 24/7",
-    "desc": "AI answers calls and texts around the clock — qualifies leads, schedules consultations, and captures case details before your team follows up."
-  },
-  {
-    "icon": "truck",
-    "title": "Fully Equipped",
-    "desc": "Trucks stocked with everything needed. First-visit completion rate above 90%."
-  }
-],
+    { icon: "award", title: "Experienced Attorneys", desc: "Our team brings years of legal expertise to every case, ensuring top-tier representation." },
+    { icon: "shield-check", title: "Client-Focused Approach", desc: "We prioritize your needs, offering personalized strategies and clear communication." },
+    { icon: "dollar-sign", title: "Transparent Fees", desc: "Clear, upfront fee structures with no hidden costs, so you know what to expect." },
+    { icon: "phone", title: "Accessible & Responsive", desc: "We are always available to answer your questions and provide timely updates on your case." },
+    { icon: "thumbs-up", title: "Strong Advocacy", desc: "Aggressive and effective representation to protect your rights and achieve the best possible outcome." },
+    { icon: "home", title: "Local Expertise", desc: "Deep understanding of local laws and court systems in Modesto and surrounding areas." }
+  ],
 
-  formServiceOptions: [
-  "Personal Injury",
-  "Family Law",
-  "Criminal Defense",
-  "Business Law",
-  "Estate Planning",
-  "Immigration Law"
-],
+  formServiceOptions: ["Personal Injury", "Family Law", "Criminal Defense", "Business Law", "Estate Planning", "Immigration Law"]
 }
 
-// Backward compat re-exports
+// Backward-compat re-exports
 export const BUSINESS = config.business
 export const SERVICES = config.services!
 export const TESTIMONIALS = config.testimonials!
